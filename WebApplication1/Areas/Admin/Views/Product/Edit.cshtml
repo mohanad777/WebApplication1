@@ -1,0 +1,73 @@
+﻿@model Product
+
+<form method="post">
+    <div class="border pt-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Product</h2>
+            <hr />
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Author"></label>
+            <input asp-for="Author" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="ISBN"></label>
+            <input asp-for="ISBN" />
+            <span asp-validation-for="ISBN" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="ListPrice"></label>
+            <input asp-for="ListPrice" />
+            <span asp-validation-for="ListPrice" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price50"></label>
+            <input asp-for="Price50" />
+            <span asp-validation-for="Price50" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price100"></label>
+            <input asp-for="Price100" />
+            <span asp-validation-for="Price100" class="text-danger"></span>
+
+        </div>
+        <div class="row">
+            <div class="col-3 form-control">  <button type="submit" class="btn btn-primary">Edit</button></div>
+            <div class="col-3 form-control">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</form>
+
+
